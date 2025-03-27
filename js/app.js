@@ -85,7 +85,7 @@ function initCategories() {
   // Leaderboard Button
   const leaderboardBtn = document.createElement("button");
   const img = document.createElement("img");
-  img.src = `/assets/leaderboard.png`;
+  img.src = `assets/leaderboard.png`;
   img.alt = "Leaderboard";
   leaderboardBtn.appendChild(img);
   const span = document.createElement("span");

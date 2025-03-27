@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speak Comme Les Francais</title>
+  <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="blob blob-blue1"></div>
+    <div class="blob blob-red1"></div>
+    <div class="blob blob-blue2"></div>
+    <div class="blob blob-red2"></div>
+    <div class="login-content">
+      <img src="/assets/eiffel-tower.png" alt="Eiffel Tower" class="eiffel-img" />
+      <div class="login-box">
+        <h1 class="splash-heading">
+          Speak Comme <span class="french-blue">Les</span> <span class="french-red">Français</span>
+        </h1>
+        <button id="loginBtn" class="google-login">
+          <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google logo"/>
+          Sign in with Google
+        </button>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Firebase App (compat version for browser use) -->
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+<script src="/js/auth.js"></script>
+
+</body>
+</html>

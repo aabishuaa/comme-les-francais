@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/leaderboard.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">🏆 Leaderboard</h1>
+    <p class="subtitle">Top Prononciateurs de la semaine</p>
+
+    <ul id="leaderboardList" class="leaderboard-list"></ul>
+
+    <div class="back-container">
+      <button id="backBtn">← Retour</button>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+  <script src="/js/leaderboard.js"></script>
+</body>
+</html>

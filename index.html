@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>French Pronunciation Practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<body>
+    <div class="container">
+
+        <h1 class="splash-heading">Speak Comme Les Francais</h1>
+
+        <p id="welcomeMsg" class="welcome-msg"></p>
+
+        <!-- Category Selection Screen -->
+        <div id="categoryScreen" class="screen">
+            <div class="header">
+                <h1>Choisissez une Catégorie</h1>
+            </div>
+            <div id="categories" class="categories"></div>
+        </div>
+
+        <!-- Practice Screen -->
+        <div id="practiceScreen" class="screen hidden">
+            <div class="top-bar">
+                <button id="backBtn" class="back-btn">&larr; <strong>RETOUR</strong></button>
+                <div class="navigation">
+                    <button id="prevBtn" class="nav-btn">&larr;</button>
+                    <span id="wordCounter"></span>
+                    <button id="nextBtn" class="nav-btn">&rarr;</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2 id="frenchWord"></h2>
+                <p id="translation" class="translation"></p>
+                <button id="playBtn" class="audio-btn">🎧 Écouter</button>
+                <div class="recording-section">
+                    <button id="recordBtn" class="record-btn">⏺ Enregistrer</button>
+                    <div id="waveform"></div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database-compat.js"></script>
+    <script src="/js/app.js"></script>
+    
+</body>
+</html>

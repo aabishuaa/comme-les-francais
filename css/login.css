@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f0f2f5, #dce9f9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.login-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tower-bg {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Tour_Eiffel_Wikimedia_Commons.jpg/300px-Tour_Eiffel_Wikimedia_Commons.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+
+.login-box {
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+.splash-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #d6336c;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700; /* BOLD */
+    text-transform: none; /* Remove all-caps if any inherited */
+  }
+  
+  .french-blue {
+    color: #0055A4; /* French flag blue */
+    font-weight: 700;
+  }
+  
+  .french-red {
+    color: #EF4135; /* French flag red */
+    font-weight: 700;
+  }
+  
+.google-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  background: #ffffff;
+  color: #333;
+  font-weight: 600;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+.google-login img {
+  height: 20px;
+  margin-right: 12px;
+}
+
+.google-login:hover {
+  background: #f0f0f0;
+  transform: scale(1.02);
+}
+
+.blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: 0;
+  }
+  
+  .blob-blue {
+    background: rgba(0, 85, 164, 0.3); /* French blue */
+    top: -100px;
+    left: -100px;
+  }
+  
+  .blob-red {
+    background: rgba(239, 65, 53, 0.3); /* French red */
+    bottom: -100px;
+    right: -100px;
+  }
+
+  
+  .blob {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(40px);
+    z-index: 0;
+  }
+  
+/* French Blue Blobs */
+.blob-blue1 {
+    background: rgba(0, 85, 164, 0.3);
+    top: -120px;
+    left: -100px;
+  }
+  
+  .blob-blue2 {
+    background: rgba(0, 85, 164, 0.2);
+    top: 50px;
+    right: 60px;
+    width: 200px;
+    height: 200px;
+    filter: blur(60px);
+  }
+  
+  /* French Red Blobs */
+  .blob-red1 {
+    background: rgba(239, 65, 53, 0.3);
+    bottom: -80px;
+    right: -60px;
+  }
+  
+  .blob-red2 {
+    background: rgba(239, 65, 53, 0.2);
+    bottom: 120px;
+    left: 60px;
+    width: 180px;
+    height: 180px;
+    filter: blur(60px);
+  }
+  
+  .login-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 2;
+  }
+  
+  .eiffel-img {
+    width: 400px;
+    height: auto;
+    opacity: 0.9;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.2));
+  }
+  
+  @media (max-width: 768px) {
+    .login-content {
+      flex-direction: column;
+    }
+  
+    .eiffel-img {
+      width: 140px;
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+  .login-box {
+    background: white;
+    padding: 3rem 3rem; /* Increased horizontal padding */
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    max-width: 900px; /* 🔼 Increased from 400px */
+    width: 100%;
+  }
+  
